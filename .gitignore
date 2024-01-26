@@ -19,3 +19,5 @@
 *.csproj
 *.DS_Store
 *.blob
+Packages/packages-lock.json
+ProjectSettings/ProjectVersion.txt
