@@ -8,7 +8,7 @@ using Tool.Module.Message;
 
 public class GameInstance : Singleton<GameInstance>
 {
-    private void Awake()
+    private new void Awake()
     {
         MessageDispatcher.Init(gameObject);
 
@@ -16,7 +16,7 @@ public class GameInstance : Singleton<GameInstance>
     }
 
     #region Coroutine
-    public new static void CallLater(float delay, Action action)
+    public static void CallLater(float delay, Action action)
     {
         Instance.StartCoroutine(Instance.CorCallLater(delay, action));
     }
@@ -25,7 +25,7 @@ public class GameInstance : Singleton<GameInstance>
     // {
             // code
     // });
-    public new static void CallNextFrame(Action action)
+    public static void CallNextFrame(Action action)
     {
         Instance.StartCoroutine(Instance.CorCallNextFrame(action));
     }
@@ -53,17 +53,17 @@ public class GameInstance : Singleton<GameInstance>
     #endregion
 
     #region Message
-    public new static void Signal(string msg, object data = null, object src = null, float delay = 0.0f)
+    public static void Signal(string msg, object data = null, object src = null, float delay = 0.0f)
     {
         MessageDispatcher.SendMessage(src, msg, data, delay);
     }
 
-    public new static void Connect(string msg, MessageHandler handler)
+    public static void Connect(string msg, MessageHandler handler)
     {
         MessageDispatcher.AddListener(msg, handler, true);
     }
 
-    public new static void Disconnect(string msg, MessageHandler handler)
+    public static void Disconnect(string msg, MessageHandler handler)
     {
         MessageDispatcher.RemoveListener(msg, handler, true);
     }
