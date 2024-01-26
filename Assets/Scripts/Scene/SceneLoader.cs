@@ -29,12 +29,6 @@ public class SceneLoader : MonoBehaviour
         if (_dontLoadSceneOnStart)
             return;
 
-        if (!_firstScene.IsValid())
-        {
-            Debug.LogError("SceneLoader: FirstSceneŒ¥≈‰÷√.");
-            return;
-        }
-
         _currScene = _firstScene;
         _currScene.LoadSceneAsync(LoadSceneMode.Additive);
     }

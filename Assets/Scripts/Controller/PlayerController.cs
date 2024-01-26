@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Tool.Module.Message;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -10,12 +12,28 @@ public class PlayerController : MonoBehaviour
     private Vector2 inputDirection;
     private Animator anim;
     private bool isMove = false;
+    private bool canControl = true;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+    }
+
+    private void OnEnable()
+    {
+        GameInstance.Connect("move.ban", OnMoveban);
+    }
+
+    private void OnDisable()
+    {
+        GameInstance.Disconnect("move.ban", OnMoveban);
+    }
+
+    private void OnMoveban(IMessage rMessage)
+    {
+        canControl = false;
     }
 
     // Update is called once per frame
@@ -46,13 +64,12 @@ public class PlayerController : MonoBehaviour
         {
             inputDirection.y = 0;
         }
-
-
     }
 
     private void FixedUpdate()
     {
-        Move();
+        if(canControl)
+            Move();
     }
 
     private void Move()
