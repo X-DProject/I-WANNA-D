@@ -6,13 +6,16 @@ public class PlayerController : MonoBehaviour
 {
     public float speed = 1f;
     public Rigidbody2D rb;
-    
-    public Vector2 inputDirection;
+
+    private Vector2 inputDirection;
+    private Animator anim;
+    private bool isMove = false;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -54,6 +57,18 @@ public class PlayerController : MonoBehaviour
 
     private void Move()
     {
+        if(inputDirection == new Vector2(0,0))
+        {
+            anim.SetBool("isMove", false);
+            isMove = false;
+        }
+        else
+        {
+            if(isMove == false)
+                anim.SetBool("isMove", true);
+            isMove = true;
+        }
+
         rb.velocity = new Vector2(inputDirection.x * speed * Time.deltaTime, inputDirection.y * speed * Time.deltaTime);
         int faceDir = (int)transform.localScale.x;
 
