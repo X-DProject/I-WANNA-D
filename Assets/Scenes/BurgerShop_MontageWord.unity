@@ -168,8 +168,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isOk: 0
-  _angryTextMatchArea: {fileID: 1508164993}
-  _hunText: {fileID: 476644786}
+  _matchArea: {fileID: 1508164993}
+  _dragItem: {fileID: 476644786}
 --- !u!1 &451361956
 GameObject:
   m_ObjectHideFlags: 0
