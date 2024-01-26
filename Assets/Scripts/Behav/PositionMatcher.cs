@@ -58,6 +58,14 @@ namespace Game.Behav
         }
 
         public int  Id       => _id;
-        public bool HasMatch => _matchers.Count > 0;
+        public bool HasMatch
+        {
+            get
+            {
+                if (_debug)
+                    Debug.Log($"[PositionMatcher] has {_matchers.Count} matches.");
+                return _matchers.Count > 0;
+            }
+        }
     }
 }
