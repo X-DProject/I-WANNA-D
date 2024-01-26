@@ -48,7 +48,7 @@ namespace Game.Behav
                 Debug.Log($"[PositionMatcher] detected {collision.gameObject.name} exit of {name}.");
 
             if (collision.TryGetComponent(out PositionMatcher matcher))
-                if (matcher.Id == this.Id && !_matchers.Contains(matcher))
+                if (matcher.Id == this.Id && _matchers.Contains(matcher))
                 {
                     _matchers.Remove(matcher);
 
