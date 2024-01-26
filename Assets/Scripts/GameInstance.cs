@@ -20,6 +20,11 @@ public class GameInstance : Singleton<GameInstance>
     {
         Instance.StartCoroutine(Instance.CorCallLater(delay, action));
     }
+    // CallLater(0.1f, ()) => );
+    // CallLater(0.1f, () => 
+    // {
+            // code
+    // });
     public new static void CallNextFrame(Action action)
     {
         Instance.StartCoroutine(Instance.CorCallNextFrame(action));
