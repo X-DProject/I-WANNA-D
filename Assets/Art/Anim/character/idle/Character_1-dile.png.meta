@@ -114,7 +114,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 1098
+        y: 1460
         width: 152
         height: 359
       alignment: 0
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b92664783cfc0a439b4905c5a99ea30
-      internalID: -2122304889
+      spriteID: 3f0f4cb375c7f4146b2245bdefb796cd
+      internalID: -1998413760
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 156
-        y: 1097
+        y: 1459
         width: 152
         height: 359
       alignment: 0
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6534a8a73728759439f7fed1979be7ca
-      internalID: 2133321451
+      spriteID: 24da195fecb94974595b60a4760ab7ea
+      internalID: 669156922
       vertices: []
       indices: 
       edges: []
@@ -156,7 +156,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 310
-        y: 1097
+        y: 1459
         width: 152
         height: 359
       alignment: 0
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02049a07ed47dad4b871dbceffcc3850
-      internalID: 117090934
+      spriteID: 8c7aeacd3dda8a443b8dbabbac308373
+      internalID: -400757290
       vertices: []
       indices: 
       edges: []
@@ -177,6 +177,300 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 464
+        y: 1459
+        width: 152
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6c7cac2caae03439886a76e9c04d3b
+      internalID: 487255930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_4
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1459
+        width: 152
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a07fa030e2f84488119120a2b2ca92
+      internalID: 414336683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_5
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1458
+        width: 152
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e554c7e66b54d748bbdde160faad5d0
+      internalID: -1502836890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_6
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1458
+        width: 152
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6293dedfa55ed4a4b876afdc1a5113bf
+      internalID: -168202046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_7
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1459
+        width: 152
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9507ca6148d6be64cb59555b76e88941
+      internalID: -451834342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_8
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 1459
+        width: 152
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9deb80d4b5116f34cb341682b1861c8f
+      internalID: 1082948521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_9
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 1459
+        width: 152
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651d25fec4233fb408c300406687a129
+      internalID: -219810044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_10
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 1459
+        width: 152
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f9ddc38d203f84d94f3c1f7e17af3f
+      internalID: -173670334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_11
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 1458
+        width: 152
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033ed7e116e358d4bb7df0eda21ddf78
+      internalID: -1555392636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1098
+        width: 152
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e5fea9e1d9046d43b8e375a7b22a52e
+      internalID: 1444961473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_13
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1097
+        width: 152
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79b9de375be56b4cb4b2625f9b74e12
+      internalID: -693450373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_14
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1097
+        width: 152
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8de05c098cfd794781053073f480c14
+      internalID: 1386428808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_15
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1097
+        width: 152
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae43f917e357274ab8c574686876739
+      internalID: -432483060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_16
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1097
+        width: 152
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b9454d90db23484da11eea8728ac340
+      internalID: -797016595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_17
+      rect:
+        serializedVersion: 2
+        x: 772
         y: 1097
         width: 152
         height: 359
@@ -187,39 +481,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dce8eae7c2c44bb4fb9635a649589746
-      internalID: 185109682
+      spriteID: f439e977d71f6bd4e83871b127886672
+      internalID: 104540986
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_1-dile_4
+      name: Character_1-dile_18
       rect:
         serializedVersion: 2
-        x: 618
-        y: 1096
-        width: 152
-        height: 360
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d11c8a6c85ece964f9639f4f4110ba76
-      internalID: 1414043294
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_1-dile_5
-      rect:
-        serializedVersion: 2
-        x: 772
-        y: 1096
+        x: 926
+        y: 1097
         width: 152
         height: 359
       alignment: 0
@@ -229,41 +502,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65898b57a9ddf9549947ec7db26299b1
-      internalID: 992988706
+      spriteID: 39ff010865b68c44faeb81cf4f777679
+      internalID: 1743014126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_1-dile_6
-      rect:
-        serializedVersion: 2
-        x: 926
-        y: 1095
-        width: 152
-        height: 360
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 14d1e2eddb5fdf946a0d8d92d33c05fb
-      internalID: 1286242339
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_1-dile_7
+      name: Character_1-dile_19
       rect:
         serializedVersion: 2
         x: 1080
-        y: 1095
+        y: 1096
         width: 152
-        height: 360
+        height: 361
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,18 +523,81 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 780d6b001c165f64e9b3c7c6d915075d
-      internalID: -1200449727
+      spriteID: 912e341068b2c994aa2a8cb734ee8975
+      internalID: 245257514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_1-dile_8
+      name: Character_1-dile_20
       rect:
         serializedVersion: 2
         x: 1234
-        y: 1094
+        y: 1096
+        width: 152
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f80623d28f129146bb9f7d0a7f66368
+      internalID: 2036919112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_21
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 1096
+        width: 152
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273aaf8fc50f01a4e80bdc7a318e709b
+      internalID: 1856440259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_22
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 1096
+        width: 152
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd0ad836732b0c49a0b0f48e33595d1
+      internalID: 402663372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_23
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 1096
         width: 152
         height: 360
       alignment: 0
@@ -292,35 +607,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db356837a7132d542b47a170ff1630b0
-      internalID: -983576114
+      spriteID: e2ef2a66b4fa51c48828c1f5fc19a93b
+      internalID: -24726798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_1-dile_9
-      rect:
-        serializedVersion: 2
-        x: 1388
-        y: 1083
-        width: 152
-        height: 358
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3fd4cf3fcd8ea874198755606c04f4ab
-      internalID: -458351680
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_1-dile_10
+      name: Character_1-dile_24
       rect:
         serializedVersion: 2
         x: 2
@@ -334,14 +628,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0d2ef97e47825c4c9430213dbd0e685
-      internalID: -1275486432
+      spriteID: 4a9539ed50042a6498d626b7bf8ef533
+      internalID: -969933569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_1-dile_11
+      name: Character_1-dile_25
       rect:
         serializedVersion: 2
         x: 156
@@ -355,14 +649,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28488b8d292f89e46a2b30dd4ee7a907
-      internalID: -869374318
+      spriteID: 9c6121e2ebb41474681de1707a445a6f
+      internalID: -908843310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_1-dile_12
+      name: Character_1-dile_26
       rect:
         serializedVersion: 2
         x: 310
@@ -376,14 +670,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdc6649e7ca941847916c1de1d0010ec
-      internalID: -1402236343
+      spriteID: b7deff2c0a3723246aef1aabba221c25
+      internalID: 610211866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_1-dile_13
+      name: Character_1-dile_27
       rect:
         serializedVersion: 2
         x: 464
@@ -397,17 +691,80 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e427044d8418414c86cae5a2697e6dc
-      internalID: 2104949591
+      spriteID: bba1e0b09446dca46857971c44bbf4a6
+      internalID: 2060629532
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_1-dile_14
+      name: Character_1-dile_28
       rect:
         serializedVersion: 2
         x: 618
+        y: 733
+        width: 152
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2a7fc80d400ad4094eec26d982260f
+      internalID: 1837632726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_29
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 733
+        width: 152
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d217339c15d7b6145a7ae6f048fec978
+      internalID: 924696189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_30
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 733
+        width: 152
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa124405fb03b16488b58e97b5ef039f
+      internalID: -872558490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_31
+      rect:
+        serializedVersion: 2
+        x: 1080
         y: 733
         width: 152
         height: 361
@@ -418,17 +775,80 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bebc16c58cdca714684cdb6ad5ed9cc0
-      internalID: 203156356
+      spriteID: 0fd4a7d08c12b614a8f481a11f2c6964
+      internalID: -1870987237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_1-dile_15
+      name: Character_1-dile_32
       rect:
         serializedVersion: 2
-        x: 772
+        x: 1234
+        y: 733
+        width: 152
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e07f2217bfcf140bbcd1d19574c05e
+      internalID: -773159627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_33
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 733
+        width: 152
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42604cd5a695a54498be9ea1241af2b1
+      internalID: -1420260191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_34
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 733
+        width: 152
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d958235d6243145a899df2222a0133
+      internalID: -1681913613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_35
+      rect:
+        serializedVersion: 2
+        x: 1696
         y: 732
         width: 152
         height: 362
@@ -439,98 +859,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c90701b8bb55d2c4983e0a8fb7886278
-      internalID: 1909261441
+      spriteID: 627dc62937122474181a498a2dd6caa2
+      internalID: -375479478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_1-dile_16
-      rect:
-        serializedVersion: 2
-        x: 926
-        y: 732
-        width: 152
-        height: 361
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 76b1e6440f9e1a44da14d56f278c4ce7
-      internalID: -1658885112
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_1-dile_17
-      rect:
-        serializedVersion: 2
-        x: 1080
-        y: 732
-        width: 152
-        height: 361
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 63227c8aa402e934890dbac85d35ea47
-      internalID: -1121112551
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_1-dile_18
-      rect:
-        serializedVersion: 2
-        x: 1234
-        y: 732
-        width: 152
-        height: 360
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e077aa1eca203e741bc037dc06a83f87
-      internalID: 5340263
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_1-dile_19
-      rect:
-        serializedVersion: 2
-        x: 1388
-        y: 723
-        width: 152
-        height: 358
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0530e536e9f8145409449b15b382de01
-      internalID: -174652075
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_1-dile_20
+      name: Character_1-dile_36
       rect:
         serializedVersion: 2
         x: 2
@@ -544,14 +880,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4eb5652d0272404c9cef52ce6e74d31
-      internalID: 838925225
+      spriteID: 8b3da62ec3dbd254aa62067f86beb54c
+      internalID: 855306190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_1-dile_21
+      name: Character_1-dile_37
       rect:
         serializedVersion: 2
         x: 156
@@ -565,14 +901,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a51b7f1455b33b4eb32953e4ced6a35
-      internalID: -1492689384
+      spriteID: d1969b00d07d8634485517b504b5c4dd
+      internalID: -787620064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_1-dile_22
+      name: Character_1-dile_38
       rect:
         serializedVersion: 2
         x: 310
@@ -586,14 +922,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00e120aafea979d498ecd2b55b1c6ef8
-      internalID: -131739497
+      spriteID: 767ecf2cd1d891745a17d26382e9ded5
+      internalID: -918671897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_1-dile_23
+      name: Character_1-dile_39
       rect:
         serializedVersion: 2
         x: 464
@@ -607,14 +943,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6dab0418815e97446980c260251477a0
-      internalID: -1963854870
+      spriteID: d5005f935657b464ab4a8cae636926e9
+      internalID: 1349035816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_1-dile_24
+      name: Character_1-dile_40
       rect:
         serializedVersion: 2
         x: 618
@@ -628,17 +964,143 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d17dbf3e304b23849b8e93e4dbf99b41
-      internalID: -1569631054
+      spriteID: 63267c1307319cf4d844e0559e930aff
+      internalID: 588606422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_1-dile_25
+      name: Character_1-dile_41
       rect:
         serializedVersion: 2
         x: 772
+        y: 368
+        width: 152
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af68c90df3c8cbe46a68602fd017e065
+      internalID: 1284823374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_42
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 368
+        width: 152
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 200a5e82ae5a03c48860fbf4b7f91a7b
+      internalID: 72224291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_43
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 368
+        width: 152
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d4d1b941c91244b91ea1335080a216
+      internalID: 1156151494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_44
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 368
+        width: 152
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5faf3b528cb1f49b46ddae9bc1638f
+      internalID: -942021718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_45
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 368
+        width: 152
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df53e3c78247df747b69d8fc17d6eaa1
+      internalID: -2035818125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_46
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 368
+        width: 152
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34eadaeaa1daa3940835cd686e0c19d5
+      internalID: 1637359459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_47
+      rect:
+        serializedVersion: 2
+        x: 1696
         y: 368
         width: 152
         height: 362
@@ -649,98 +1111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f53cd675f3de6fb4daf30a6e4d522cf1
-      internalID: 1879402697
+      spriteID: e77c6203911d4834c98bfd2e04074941
+      internalID: 1763979107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_1-dile_26
-      rect:
-        serializedVersion: 2
-        x: 926
-        y: 368
-        width: 152
-        height: 361
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e05e44baad38cb40b6ddf916b5a7e20
-      internalID: -1682673880
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_1-dile_27
-      rect:
-        serializedVersion: 2
-        x: 1080
-        y: 368
-        width: 152
-        height: 361
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 61447386dc585494e994269474b040c2
-      internalID: -60745134
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_1-dile_28
-      rect:
-        serializedVersion: 2
-        x: 1234
-        y: 367
-        width: 152
-        height: 363
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 58a6384484cb08b428d51f0c10f57b85
-      internalID: 1688191882
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_1-dile_29
-      rect:
-        serializedVersion: 2
-        x: 1388
-        y: 363
-        width: 152
-        height: 358
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: facb87e21552d5848b6416d10f8a1885
-      internalID: -572303750
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character_1-dile_30
+      name: Character_1-dile_48
       rect:
         serializedVersion: 2
         x: 2
@@ -754,14 +1132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7690d5304c6ab52409ef7ac15c59a969
-      internalID: 948968514
+      spriteID: 97f222e5ff87b8546a4418d9f18c9b87
+      internalID: 11002299
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_1-dile_31
+      name: Character_1-dile_49
       rect:
         serializedVersion: 2
         x: 156
@@ -775,14 +1153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42262f274be995b41bcd8eb5c76c7778
-      internalID: -846796063
+      spriteID: 083b7bad8e016ed468fe0e75818864e3
+      internalID: -1447171986
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_1-dile_32
+      name: Character_1-dile_50
       rect:
         serializedVersion: 2
         x: 310
@@ -796,14 +1174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87e05715890466f45a8298e1a72f6ba4
-      internalID: -266515173
+      spriteID: 87f725e2abfc69e45a6c996aca674ea1
+      internalID: 222329663
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_1-dile_33
+      name: Character_1-dile_51
       rect:
         serializedVersion: 2
         x: 464
@@ -817,14 +1195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acce2923cf225f7468bfd7a2023bae63
-      internalID: 1070653568
+      spriteID: 8e9bf836e9f4aac48a594fe8cb8fb931
+      internalID: 990747330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_1-dile_34
+      name: Character_1-dile_52
       rect:
         serializedVersion: 2
         x: 618
@@ -838,14 +1216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29f444a2f20da0d4a83ce925f7c4b712
-      internalID: -1093277968
+      spriteID: 5b39c57b466014c4e89a87feaace3464
+      internalID: 1818696569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_1-dile_35
+      name: Character_1-dile_53
       rect:
         serializedVersion: 2
         x: 772
@@ -859,14 +1237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e052078864387740973e609447b45c9
-      internalID: -1168281676
+      spriteID: dbe82c821e04c69478f7aaf556dd067f
+      internalID: -1569649290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_1-dile_36
+      name: Character_1-dile_54
       rect:
         serializedVersion: 2
         x: 926
@@ -880,14 +1258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c89875390a86d0849a19342e169697a4
-      internalID: 1854787584
+      spriteID: bc1fa3e848b74064bb52b32fb3751223
+      internalID: -1433306017
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_1-dile_37
+      name: Character_1-dile_55
       rect:
         serializedVersion: 2
         x: 1080
@@ -901,20 +1279,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b17bb8d776971941a9ece2defd1083e
-      internalID: -1498017095
+      spriteID: 96ada04e4795cec46ad4cd5808c0afe8
+      internalID: 1228871823
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_1-dile_38
+      name: Character_1-dile_56
       rect:
         serializedVersion: 2
         x: 1234
         y: 2
         width: 152
-        height: 363
+        height: 364
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -922,20 +1300,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d8e4558ec4beb54eb7754d62116fe42
-      internalID: -404360785
+      spriteID: 8fdaca4a87ba39e40b16880f6403e748
+      internalID: 1181144790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_1-dile_39
+      name: Character_1-dile_57
       rect:
         serializedVersion: 2
         x: 1388
         y: 2
         width: 152
-        height: 359
+        height: 364
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -943,8 +1321,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3af5e22d972b5d54eba3dd4fda4aa2da
-      internalID: 426934933
+      spriteID: 1b76dcd7ae7f96c4da04c7e14540c6fc
+      internalID: -2022916198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_58
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 2
+        width: 152
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df3d1b69799aade49b58bb54f99390cf
+      internalID: 1978663068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_1-dile_59
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 2
+        width: 152
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcee18ab8bb5fc74e88219a5c5cc9d43
+      internalID: -862008789
       vertices: []
       indices: 
       edges: []
@@ -960,46 +1380,66 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Character_1-dile_0: -2122304889
-      Character_1-dile_1: 2133321451
-      Character_1-dile_10: -1275486432
-      Character_1-dile_11: -869374318
-      Character_1-dile_12: -1402236343
-      Character_1-dile_13: 2104949591
-      Character_1-dile_14: 203156356
-      Character_1-dile_15: 1909261441
-      Character_1-dile_16: -1658885112
-      Character_1-dile_17: -1121112551
-      Character_1-dile_18: 5340263
-      Character_1-dile_19: -174652075
-      Character_1-dile_2: 117090934
-      Character_1-dile_20: 838925225
-      Character_1-dile_21: -1492689384
-      Character_1-dile_22: -131739497
-      Character_1-dile_23: -1963854870
-      Character_1-dile_24: -1569631054
-      Character_1-dile_25: 1879402697
-      Character_1-dile_26: -1682673880
-      Character_1-dile_27: -60745134
-      Character_1-dile_28: 1688191882
-      Character_1-dile_29: -572303750
-      Character_1-dile_3: 185109682
-      Character_1-dile_30: 948968514
-      Character_1-dile_31: -846796063
-      Character_1-dile_32: -266515173
-      Character_1-dile_33: 1070653568
-      Character_1-dile_34: -1093277968
-      Character_1-dile_35: -1168281676
-      Character_1-dile_36: 1854787584
-      Character_1-dile_37: -1498017095
-      Character_1-dile_38: -404360785
-      Character_1-dile_39: 426934933
-      Character_1-dile_4: 1414043294
-      Character_1-dile_5: 992988706
-      Character_1-dile_6: 1286242339
-      Character_1-dile_7: -1200449727
-      Character_1-dile_8: -983576114
-      Character_1-dile_9: -458351680
+      Character_1-dile_0: -1998413760
+      Character_1-dile_1: 669156922
+      Character_1-dile_10: -173670334
+      Character_1-dile_11: -1555392636
+      Character_1-dile_12: 1444961473
+      Character_1-dile_13: -693450373
+      Character_1-dile_14: 1386428808
+      Character_1-dile_15: -432483060
+      Character_1-dile_16: -797016595
+      Character_1-dile_17: 104540986
+      Character_1-dile_18: 1743014126
+      Character_1-dile_19: 245257514
+      Character_1-dile_2: -400757290
+      Character_1-dile_20: 2036919112
+      Character_1-dile_21: 1856440259
+      Character_1-dile_22: 402663372
+      Character_1-dile_23: -24726798
+      Character_1-dile_24: -969933569
+      Character_1-dile_25: -908843310
+      Character_1-dile_26: 610211866
+      Character_1-dile_27: 2060629532
+      Character_1-dile_28: 1837632726
+      Character_1-dile_29: 924696189
+      Character_1-dile_3: 487255930
+      Character_1-dile_30: -872558490
+      Character_1-dile_31: -1870987237
+      Character_1-dile_32: -773159627
+      Character_1-dile_33: -1420260191
+      Character_1-dile_34: -1681913613
+      Character_1-dile_35: -375479478
+      Character_1-dile_36: 855306190
+      Character_1-dile_37: -787620064
+      Character_1-dile_38: -918671897
+      Character_1-dile_39: 1349035816
+      Character_1-dile_4: 414336683
+      Character_1-dile_40: 588606422
+      Character_1-dile_41: 1284823374
+      Character_1-dile_42: 72224291
+      Character_1-dile_43: 1156151494
+      Character_1-dile_44: -942021718
+      Character_1-dile_45: -2035818125
+      Character_1-dile_46: 1637359459
+      Character_1-dile_47: 1763979107
+      Character_1-dile_48: 11002299
+      Character_1-dile_49: -1447171986
+      Character_1-dile_5: -1502836890
+      Character_1-dile_50: 222329663
+      Character_1-dile_51: 990747330
+      Character_1-dile_52: 1818696569
+      Character_1-dile_53: -1569649290
+      Character_1-dile_54: -1433306017
+      Character_1-dile_55: 1228871823
+      Character_1-dile_56: 1181144790
+      Character_1-dile_57: -2022916198
+      Character_1-dile_58: 1978663068
+      Character_1-dile_59: -862008789
+      Character_1-dile_6: -168202046
+      Character_1-dile_7: -451834342
+      Character_1-dile_8: 1082948521
+      Character_1-dile_9: -219810044
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
