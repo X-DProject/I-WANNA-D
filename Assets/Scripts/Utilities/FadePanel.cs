@@ -11,33 +11,26 @@ public class FadePanel : MonoBehaviour
     void Start()
     {
         fadeImage = GetComponent<Image>();
-
-        EventHandler.FadeOutEvent += OnFadeOut;
-        GameInstance.Connect("fade.out", OnFadeOutM);
-        EventHandler.FadeInEvent += OnFadeIn;
+        GameInstance.Connect("fade.out", OnFadeOut);
+        GameInstance.Connect("fade.in", OnFadeIn);
     }
 
     void OnDestroy()
     {
-        EventHandler.FadeOutEvent -= OnFadeOut;
-        GameInstance.Disconnect("fade.out", OnFadeOutM);
-        EventHandler.FadeInEvent -= OnFadeIn;
+        GameInstance.Disconnect("fade.out", OnFadeIn);
+        GameInstance.Disconnect("fade.in", OnFadeIn);
     }
 
-    private void OnFadeOut(float duration)
-    {
-        var targetColor = new Color(0,0,0,1);
-        fadeImage.DOColor( targetColor, duration);
-    }
-    private void OnFadeOutM(IMessage msg)
+    private void OnFadeOut(IMessage msg)
     {
         float duration = (float)msg.Data;
         var targetColor = new Color(0,0,0,1);
         fadeImage.DOColor( targetColor, duration);
     }
 
-    private void OnFadeIn(float duration)
+    private void OnFadeIn(IMessage msg)
     {
+        float duration = (float)msg.Data;
         var targetColor = new Color(0,0,0,0);
         fadeImage.DOColor( targetColor, duration);
     }

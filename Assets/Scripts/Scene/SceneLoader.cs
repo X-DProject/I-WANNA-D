@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Tool.Module.Message;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
@@ -25,17 +26,17 @@ public class SceneLoader : MonoBehaviour
 
     private void OnEnable()
     {
-        EventHandler.LoadSceneEvent += OnLoadSceneEvent;
+        GameInstance.Connect("scene.load", OnLoadSceneEvent);
     }
 
     private void OnDisable()
     {
-        EventHandler.LoadSceneEvent -= OnLoadSceneEvent;
+        GameInstance.Disconnect("scene.load", OnLoadSceneEvent);
     }
 
-    private void OnLoadSceneEvent(AssetReference loadScene)
+    private void OnLoadSceneEvent(IMessage msg)
     {
-        
+        AssetReference loadScene = msg.Data as AssetReference;
         if (isLoading)
             return;
 
@@ -54,18 +55,17 @@ public class SceneLoader : MonoBehaviour
 
     private IEnumerator UnLoadPreviousScene()
     {
-        // EventHandler.CallFadeOutEvent(fadeDuration);
         GameInstance.Signal("fade.out", fadeDuration);
         yield return new WaitForSeconds(fadeDuration);
 
-        yield return currScene.UnLoadScene(); 
-        
+        yield return currScene.UnLoadScene();
+
         LoadNewScene();
     }
 
     private void LoadNewScene()
     {
-        var loadingOption = nextScene.LoadSceneAsync(LoadSceneMode.Additive,true);
+        var loadingOption = nextScene.LoadSceneAsync(LoadSceneMode.Additive, true);
         loadingOption.Completed += OnLoadCompleted;
     }
 
@@ -73,7 +73,7 @@ public class SceneLoader : MonoBehaviour
     private void OnLoadCompleted(AsyncOperationHandle<SceneInstance> handle)
     {
         currScene = nextScene;
-        EventHandler.CallFadeInEvent(fadeDuration);
+        GameInstance.Signal("fade.in", fadeDuration);
         isLoading = false;
     }
 

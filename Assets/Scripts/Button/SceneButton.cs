@@ -17,7 +17,7 @@ public class SceneButton : MonoBehaviour
 
     private void OnButtonClick()
     {
-        EventHandler.CallLoadSceneEvent(loadScene);
+        GameInstance.Signal("scene.load", loadScene);
     }
 
 }
