@@ -9,6 +9,9 @@ namespace Game.Behav
     {
         [SerializeField]
         private int _id;
+
+        [SerializeField]
+        private bool _debug;
         
         private readonly List<PositionMatcher> _matchers = new(capacity: 99);
 
@@ -26,19 +29,43 @@ namespace Game.Behav
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
+            if (_debug)
+                Debug.Log($"[PositionMatcher] detected {collision.gameObject.name} enter {name}.");
+
             if (collision.TryGetComponent(out PositionMatcher matcher))
-                if (matcher.Id == this.Id)
+                if (matcher.Id == this.Id && !_matchers.Contains(matcher))
+                {
                     _matchers.Add(matcher);
+
+                    if (_debug)
+                        Debug.Log($"[PositionMatcher] {collision.gameObject.name} already added to {name}.");
+                }
         }
 
         private void OnTriggerExit2D(Collider2D collision)
         {
+            if (_debug)
+                Debug.Log($"[PositionMatcher] detected {collision.gameObject.name} exit of {name}.");
+
             if (collision.TryGetComponent(out PositionMatcher matcher))
-                if (matcher.Id == this.Id)
+                if (matcher.Id == this.Id && _matchers.Contains(matcher))
+                {
                     _matchers.Remove(matcher);
+
+                    if (_debug)
+                        Debug.Log($"[PositionMatcher] {collision.gameObject.name} already delete from {name}.");
+                }
         }
 
         public int  Id       => _id;
-        public bool HasMatch => _matchers.Count > 0;
+        public bool HasMatch
+        {
+            get
+            {
+                if (_debug)
+                    Debug.Log($"[PositionMatcher] has {_matchers.Count} matches.");
+                return _matchers.Count > 0;
+            }
+        }
     }
 }

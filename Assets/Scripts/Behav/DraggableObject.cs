@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 namespace Game.Behav
 {
     [RequireComponent(typeof(Collider2D))]
+    [RequireComponent(typeof(Rigidbody2D))]
     public sealed class DraggableObject : MonoBehaviour, IPointerClickHandler
     {
         [SerializeField]
