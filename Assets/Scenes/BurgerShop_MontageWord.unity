@@ -184,6 +184,18 @@ MonoBehaviour:
           m_StringArgument: happy_angry float 0.3 1
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 865376399}
+        m_TargetAssemblyTypeName: Game.Behav.Text.TMProColorChanger, Assembly-CSharp
+        m_MethodName: ChangeColorLerply
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 150 100 70 1
+          m_BoolArgument: 0
+        m_CallState: 2
   _matchArea: {fileID: 1508164993}
   _dragItem: {fileID: 476644786}
 --- !u!1 &451361956
@@ -884,6 +896,7 @@ GameObject:
   - component: {fileID: 865376396}
   - component: {fileID: 865376398}
   - component: {fileID: 865376397}
+  - component: {fileID: 865376399}
   m_Layer: 0
   m_Name: text gary
   m_TagString: Untagged
@@ -1045,6 +1058,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &865376399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865376395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7853207208273f24b87837514cb2e942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _text: {fileID: 865376397}
 --- !u!1 &908278210
 GameObject:
   m_ObjectHideFlags: 0
@@ -1112,8 +1138,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282542995
-  m_fontColor: {r: 0.5754717, g: 0.41862354, b: 0.25878125, a: 1}
+    rgba: 4282803350
+  m_fontColor: {r: 0.5882353, g: 0.39215687, b: 0.27450982, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
