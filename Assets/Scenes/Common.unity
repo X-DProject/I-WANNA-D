@@ -1054,7 +1054,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c68d28c3af8fd9b4b931649472ae7024, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeText: {fileID: 1168569427}
+  timeList: {fileID: 0}
+  timePrefab: {fileID: 0}
 --- !u!1 &1030748548
 GameObject:
   m_ObjectHideFlags: 0
