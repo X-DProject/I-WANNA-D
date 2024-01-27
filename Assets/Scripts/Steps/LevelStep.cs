@@ -1,26 +1,45 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Game.Step
 {
-    public class LevelStep : MonoBehaviour
+    public abstract class LevelStep : MonoBehaviour
     {
-        [SerializeField]
-        private bool _isOk = false;
+        [Header("Process")]
 
-        public bool IsOk
+        [SerializeField]
+        private bool _isFinished = false;
+
+        [SerializeField]
+        private LevelStep _nextStep;
+
+        private bool Enable
         {
-            get => _isOk; 
-            protected set
+            get => this.enabled && gameObject.activeInHierarchy;
+            set
             {
-                if (value)
-                    Debug.Log($"[Step] step {name} is finished.");
-                _isOk = value;
+                this.enabled = value;
+                gameObject.SetActive(value);
             }
         }
+        
+        public bool IsFinished 
+            => _isFinished;
+        public void Check() // call on UnityEvent
+        {
+            if (!this.Enable)
+                return;
+
+            if (TryPassStep())
+            {            
+                this._isFinished = true;
+                this.Enable = false;
+
+                Debug.Log($"[Step] step {name} is finished.");
+
+                if (_nextStep != null)
+                    _nextStep.Enable = true;
+            }
+        } 
+        protected abstract bool TryPassStep();
     }
 }

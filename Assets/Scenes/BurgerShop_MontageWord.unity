@@ -167,7 +167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c91109219abdb849bf0a587372bc333, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isOk: 0
+  _isFinished: 0
+  _nextStep: {fileID: 1842854782}
   _matchArea: {fileID: 1508164993}
   _dragItem: {fileID: 476644786}
 --- !u!1 &451361956
@@ -1673,7 +1674,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1842854781
 Transform:
   m_ObjectHideFlags: 0
@@ -1701,7 +1702,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c91109219abdb849bf0a587372bc333, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isOk: 0
+  _isFinished: 0
+  _nextStep: {fileID: 0}
   _matchArea: {fileID: 1628163887}
   _dragItem: {fileID: 636462444}
 --- !u!1 &2092112538
