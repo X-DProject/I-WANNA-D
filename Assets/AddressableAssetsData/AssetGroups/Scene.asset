@@ -18,7 +18,7 @@ MonoBehaviour:
   m_GUID: 5c3bea7399447d94fb6b422edffd3037
   m_SerializeEntries:
   - m_GUID: bc4f1208b641dad4a843cec31fb173f1
-    m_Address: scenes/start
+    m_Address: scenes/0_start
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -34,6 +34,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7be2c0fa33d8cb848991d08172c093b4
     m_Address: scenes/7_ha
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b5190154d00ec984bb04def38efdaa82
+    m_Address: scenes/9_stargazing
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

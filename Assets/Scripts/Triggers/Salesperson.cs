@@ -48,6 +48,7 @@ public class Salesperson : MonoBehaviour
 
         if(isColl)
         {
+            // 
             GameInstance.Signal("move.ban");
             // game over
             Debug.Log("game over");
