@@ -1,3 +1,4 @@
+using Game.Util;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
@@ -22,17 +23,9 @@ namespace Game.Behav
         private void FixedUpdate()
         {
             // update position
-            if (_isInDragging)
-            {
-                Vector3 mousePos = Input.mousePosition;
-                Vector3 screenToWorld = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, -Camera.main.transform.position.z));
-
-                transform.position = screenToWorld;
-            }
-            else
-            {
-                transform.position = _startPosition;
-            }
+            transform.position = _isInDragging
+                ? Mouse.ScreenToWorldPosition
+                : _startPosition;
         }
 
         public void OnPointerClick(PointerEventData eventData)
