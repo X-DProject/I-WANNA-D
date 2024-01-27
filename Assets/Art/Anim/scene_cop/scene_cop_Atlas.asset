@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
+  m_Name: scene_cop_Atlas
+  m_EditorClassIdentifier: 
+  atlasFile: {fileID: 4900000, guid: 7240fdf50c5773e4597141cda8f5161b, type: 3}
+  materials:
+  - {fileID: 2100000, guid: 50cbb66822be44e4cbb5c942798d009c, type: 2}
+  - {fileID: 2100000, guid: 5e82157dd06723c48b0992167eada979, type: 2}
+  - {fileID: 2100000, guid: 1071385d118b3af449db41091890ae42, type: 2}
+  - {fileID: 2100000, guid: 59a0e96f4a15e464e8fff7670bad687d, type: 2}
