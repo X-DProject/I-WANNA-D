@@ -1454,7 +1454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4590354176603276247}
   m_Layer: 0
-  m_Name: scene_cop
+  m_Name: chase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1469,7 +1469,7 @@ Transform:
   m_GameObject: {fileID: 2327105609782489362}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2749465, y: 8.644958, z: -0.057918232}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
