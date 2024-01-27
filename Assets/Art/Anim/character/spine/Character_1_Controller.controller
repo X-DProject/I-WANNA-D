@@ -346,11 +346,17 @@ AnimatorController:
   m_AnimatorParameters:
   - m_Name: happy_angry
     m_Type: 1
-    m_DefaultFloat: 0
+    m_DefaultFloat: 0.2
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
   - m_Name: idle_hold
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: stand_jump
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -793,25 +799,33 @@ BlendTree:
     m_Motion: {fileID: -9222707728439184805, guid: e5c96f2d0325190419d0b7ad9c9f2849, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
-    m_TimeScale: 0.01
+    m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: happy_angry
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -5788454705122836759, guid: e5c96f2d0325190419d0b7ad9c9f2849, type: 2}
+    m_Threshold: 0.5
+    m_Position: {x: 1, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: happy_angry
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 5588734086647668346, guid: 465be402fff0c1445ae06cec08cd6759, type: 2}
     m_Threshold: 1
-    m_Position: {x: 0, y: 0}
+    m_Position: {x: 0, y: 1}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: happy_angry
     m_Mirror: 0
   m_BlendParameter: idle_hold
-  m_BlendParameterY: happy_angry
+  m_BlendParameterY: stand_jump
   m_MinThreshold: 0
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
   m_NormalizedBlendValues: 0
-  m_BlendType: 0
+  m_BlendType: 2
 --- !u!74 &8260792985977554448
 AnimationClip:
   m_ObjectHideFlags: 0
