@@ -871,7 +871,7 @@ PolygonCollider2D:
       - {x: 9.131469, y: -5.1176696}
       - {x: 8.813326, y: -4.9354486}
       - {x: -8.884803, y: -5.0539513}
-      - {x: -8.904277, y: -2.5545766}
+      - {x: -8.187727, y: -2.6631448}
       - {x: 8.782125, y: -2.6372807}
       - {x: 8.860738, y: -4.9058466}
       - {x: 9.245577, y: -4.471183}
@@ -904,7 +904,7 @@ Transform:
   m_GameObject: {fileID: 1711631958}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10, y: -3, z: 0}
+  m_LocalPosition: {x: -11, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1124,7 +1124,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1984628332}
   - component: {fileID: 1984628333}
-  - component: {fileID: 1984628334}
   m_Layer: 0
   m_Name: HuappitCar
   m_TagString: Untagged
@@ -1199,19 +1198,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1984628334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1984628331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4803a71a899701a4ca7298064a66697d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 1020118281}
 --- !u!1 &2037366648
 GameObject:
   m_ObjectHideFlags: 0
