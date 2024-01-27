@@ -4,12 +4,12 @@ using UnityEngine;
 
 namespace Game.Step
 {
-    public class DelayAutoFinishOnEnableStep : LevelStep
+    public class AutoRunOnEnableStep : LevelStep
     {
         [Header("Behav")]
 
         [SerializeField]
-        private float _finishDelayTime;
+        private float _delay;
 
         private void OnEnable()
         {
@@ -18,7 +18,7 @@ namespace Game.Step
 
         private IEnumerator Run()
         {
-            yield return new WaitForSecondsRealtime(_finishDelayTime);
+            yield return new WaitForSecondsRealtime(_delay);
             this.Check();
         }
 
