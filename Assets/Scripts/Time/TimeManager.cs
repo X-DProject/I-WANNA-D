@@ -7,48 +7,40 @@ using UnityEngine.UI;
 
 public class TimeManager : MonoBehaviour
 {
-
-    private float currentTime;
-
-    public TextMeshProUGUI timeText;
+    public Transform timeList;
+    public GameObject timePrefab;
 
     private void OnEnable()
     {
         GameInstance.Connect("countdown.begin", OnCountdown);
+        GameInstance.Connect("next_level", OnTimerClear);
+        GameInstance.Connect("game.over", OnTimerClear);
     }
 
     private void OnDisable()
     {
         GameInstance.Disconnect("countdown.begin", OnCountdown);
+        GameInstance.Disconnect("next_level", OnTimerClear);
+        GameInstance.Disconnect("game.over", OnTimerClear);
     }
 
     private void OnCountdown(IMessage msg)
     {
         var time = (float)msg.Data;
-        currentTime = time;
-        UpdateCountdownText();
-        StartCoroutine(StartCountdown(time));
-    }
-
-    IEnumerator StartCountdown(float time)
-    {
-        while (currentTime > 0)
+        if (timePrefab != null)
         {
-            yield return new WaitForSeconds(1.0f);  // 每隔1秒执行一次
+            GameObject instantiatedPrefab = Instantiate(timePrefab, transform.position, Quaternion.identity);
+            instantiatedPrefab.transform.SetParent(timeList);
 
-            currentTime -= 1.0f;
-            UpdateCountdownText();
+            instantiatedPrefab.GetComponent<TimeCountdown>().Begin(time);
         }
-
-        GameInstance.Signal("countdown.end", time);
     }
 
-    void UpdateCountdownText()
+    private void OnTimerClear(IMessage msg)
     {
-        // 更新UI文本显示
-        if (timeText != null)
+        foreach (Transform child in timeList.transform)
         {
-            timeText.text = "Time: " + Mathf.Round(currentTime).ToString();
+            Destroy(child.gameObject);
         }
     }
 }
