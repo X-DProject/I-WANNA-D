@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 namespace Game.Step
 {
@@ -11,6 +12,9 @@ namespace Game.Step
 
         [SerializeField]
         private LevelStep _nextStep;
+
+        [SerializeField]
+        private UnityEvent _onFinished;
 
         private bool Enable
         {
@@ -33,6 +37,8 @@ namespace Game.Step
             {            
                 this._isFinished = true;
                 this.Enable = false;
+
+                _onFinished?.Invoke();
 
                 Debug.Log($"[Step] step {name} is finished.");
 
