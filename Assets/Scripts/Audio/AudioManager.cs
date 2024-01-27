@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Tool.Module.Message;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -13,14 +14,14 @@ public class AudioManager : MonoBehaviour
 
     public void OnEnable()
     {
-        EventHandler.PlayBGMEvent += OnPlayBGMEvent;
-        EventHandler.PlayFXEvent += OnPlayFXEvent;
+        GameInstance.Connect("fx.play", OnFxPlay);
+        GameInstance.Connect("bgm.play", OnBGMPlay);
     }
 
     public void OnDisable()
     {
-        EventHandler.PlayBGMEvent -= OnPlayBGMEvent;
-        EventHandler.PlayFXEvent -= OnPlayFXEvent;
+        GameInstance.Disconnect("fx.play", OnFxPlay);
+        GameInstance.Disconnect("bgm.play", OnBGMPlay);
     }
 
     private void OnPauseEvent()
@@ -36,14 +37,16 @@ public class AudioManager : MonoBehaviour
         mixer.SetFloat("MasterVolume", amount * 100 - 80);
     }
 
-    private void OnPlayBGMEvent(AudioClip clip)
+    private void OnBGMPlay(IMessage msg)
     {
+        var clip = msg.Data as AudioClip;
         BGMSource.clip = clip;
         BGMSource.Play();
     }
 
-    private void OnPlayFXEvent(AudioClip clip)
+    private void OnFxPlay(IMessage msg)
     {
+        var clip = msg.Data as AudioClip;
         FXSource.clip = clip;
         FXSource.Play();
     }

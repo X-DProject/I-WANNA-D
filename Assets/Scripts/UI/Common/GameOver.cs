@@ -5,6 +5,7 @@ using Tool.Module.Message;
 
 public class GameOver : MonoBehaviour
 {
+    public GameObject sceneButton;
     private void Awake()
     {
         GameInstance.Connect("game.over", OnGameOver);
@@ -18,6 +19,15 @@ public class GameOver : MonoBehaviour
 
     private void OnGameOver(IMessage msg)
     {
+        if (sceneButton == null)
+            throw new MissingComponentException("sceneButton gameObject is null.");
+
+        if (!sceneButton.TryGetComponent(out SceneButton sceneBtn))
+            throw new MissingComponentException("sceneButton component is missing!");
+            
+        var currLv = GameInstance.Instance.GetCurrLevel();
+        sceneBtn.loadScene = currLv;
+        
         this.gameObject.SetActive(true);
     }
 

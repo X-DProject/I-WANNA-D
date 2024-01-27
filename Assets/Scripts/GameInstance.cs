@@ -5,14 +5,30 @@ using UnityEngine;
 using Tool;
 using Tool.Util;
 using Tool.Module.Message;
+using UnityEngine.AddressableAssets;
 
 public class GameInstance : Singleton<GameInstance>
 {
+    [SerializeField]
+    public List<AssetReference> levelList;
+
+    public int currLevelIdx = 1;
+
     private new void Awake()
     {
+        base.Awake();
         MessageDispatcher.Init(gameObject);
+    }
 
-        DontDestroyOnLoad(gameObject);
+    public AssetReference GetCurrLevel()
+    {
+        return levelList[currLevelIdx];
+    }
+
+    public AssetReference GetNextLevel()
+    {
+        currLevelIdx ++;
+        return levelList[currLevelIdx];
     }
 
     #region Coroutine
