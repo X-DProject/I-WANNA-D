@@ -1,12 +1,25 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 
 namespace Game.Step.LvHamb2
 {
     public sealed class CompleteLevelOnEnableStep : LevelStep
     {
+
+        [Header("Behav")]
+
+        [SerializeField]
+        private float _delay;
+
         private void OnEnable()
         {
+            StartCoroutine(Run());
+        }
+
+        private IEnumerator Run()
+        {
+            yield return new WaitForSecondsRealtime(_delay);
             this.Check();
         }
 

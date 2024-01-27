@@ -2168,7 +2168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isFinished: 0
-  _nextStep: {fileID: 2072283261}
+  _nextStep: {fileID: 2072283262}
   _onFinished:
     m_PersistentCalls:
       m_Calls:
@@ -2241,7 +2241,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2072283260}
-  - component: {fileID: 2072283261}
+  - component: {fileID: 2072283262}
   m_Layer: 0
   m_Name: $ Level Complete
   m_TagString: Untagged
@@ -2264,7 +2264,7 @@ Transform:
   m_Father: {fileID: 1406986918}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2072283261
+--- !u!114 &2072283262
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2281,6 +2281,7 @@ MonoBehaviour:
   _onFinished:
     m_PersistentCalls:
       m_Calls: []
+  _delay: 2
 --- !u!1 &2092112538
 GameObject:
   m_ObjectHideFlags: 0
