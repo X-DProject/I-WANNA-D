@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Game.Behav
 {
@@ -9,6 +10,12 @@ namespace Game.Behav
     {
         [SerializeField]
         private int _id;
+
+        [SerializeField]
+        private UnityEvent _onMatched;
+
+        [SerializeField]
+        private UnityEvent _onDismatched;
 
         [SerializeField]
         private bool _debug;
@@ -36,6 +43,7 @@ namespace Game.Behav
                 if (matcher.Id == this.Id && !_matchers.Contains(matcher))
                 {
                     _matchers.Add(matcher);
+                    _onMatched?.Invoke();
 
                     if (_debug)
                         Debug.Log($"[PositionMatcher] {collision.gameObject.name} already added to {name}.");
@@ -51,6 +59,7 @@ namespace Game.Behav
                 if (matcher.Id == this.Id && _matchers.Contains(matcher))
                 {
                     _matchers.Remove(matcher);
+                    _onDismatched?.Invoke();
 
                     if (_debug)
                         Debug.Log($"[PositionMatcher] {collision.gameObject.name} already delete from {name}.");
