@@ -130,5 +130,17 @@ namespace Game.Behav
                 endValue: float.Parse(animParam.Value),
                 duration: duration);
         }
+
+        public void SetEmoji(float target)
+        {
+            var args = "happy_angry float " + target.ToString();
+            ChangeAnimParamDirectly(args);
+        }
+
+        public void SetEmoji(float target, float duration)
+        {
+            var args = "happy_angry float " + target.ToString() + " " + duration.ToString();
+            ChangeAnimParamLerply(args);
+        }
     }
 }

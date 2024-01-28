@@ -8,27 +8,33 @@ using System.Linq;
 
 enum Stage
 {
+    Begin,
     Half,
-    Finish
 }
 
 public class BirdGroup : MonoBehaviour
 {
     public float spacing = 1;
     private List<int> ToneList = new();
-    private int stage = 0;
+    private Stage stage = Stage.Begin;
     public List<Transform> birdList = new();
-    private List<int> rightList = new List<int>
+
+    public GameObject star;
+    public GameObject starGroup;
+
+    private List<int> firstToneList = new List<int>
     {
         1, 1, 5, 5, 6, 6, 5
     };
-    private List<int> rightList2 = new List<int>
+    private List<int> secondToneList = new List<int>
     {
         4, 4, 3, 3, 2, 2, 1
     };
 
     private void Start()
     {
+        star.SetActive(false);
+        starGroup.SetActive(false);
         SetChirping(false);
         StartCoroutine(AwakeSing());
     }
@@ -50,11 +56,11 @@ public class BirdGroup : MonoBehaviour
         ToneList.Add(tone);
         switch (stage)
         {
-        case 0:
-            if(ToneList[index] != rightList[index]) ToneList.Clear();
+        case Stage.Begin:
+            if(ToneList[index] != firstToneList[index]) ToneList.Clear();
             break;
-        case 1:
-            if(ToneList[index] != rightList2[index]) ToneList.Clear();
+        case Stage.Half:
+            if(ToneList[index] != secondToneList[index]) ToneList.Clear();
             break;
         }
         Compare();
@@ -62,15 +68,17 @@ public class BirdGroup : MonoBehaviour
     }
     private void Compare()
     {
-        if (stage == 0 && ToneList.SequenceEqual(rightList))
+        if (stage == Stage.Begin && ToneList.SequenceEqual(firstToneList))
         {
             Debug.Log("stage change");
-            stage = 1;
+            star.SetActive(true);
+            stage = Stage.Half;
         }
 
-        if (stage == 1 && ToneList.SequenceEqual(rightList2))
+        if (stage == Stage.Half && ToneList.SequenceEqual(secondToneList))
         {
-            // next level
+            starGroup.SetActive(true);
+            // Clearance
             GameInstance.Signal("clearance.show");
         }
     }
@@ -94,6 +102,4 @@ public class BirdGroup : MonoBehaviour
             bird.GetComponent<Bird>().canChirping = canChirping;
         }
     }
-
-
 }
