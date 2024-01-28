@@ -775,7 +775,7 @@ MonoBehaviour:
     m_SubObjectType: 
     m_EditorAssetChanged: 0
   _fadeDuration: 1
-  _dontLoadSceneOnStart: 1
+  _dontLoadSceneOnStart: 0
 --- !u!1 &699301180
 GameObject:
   m_ObjectHideFlags: 0
