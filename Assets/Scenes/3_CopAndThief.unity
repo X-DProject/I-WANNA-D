@@ -2794,7 +2794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rb: {fileID: 695355797}
-  _speed: 3
+  _speed: 8
   _dirCtrller: {fileID: 502630093}
 --- !u!50 &695355797
 Rigidbody2D:
@@ -3314,7 +3314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rb: {fileID: 826020521}
-  _speed: 0.25
+  _speed: 1.8
   _dirCtrller: {fileID: 826020522}
 --- !u!50 &826020521
 Rigidbody2D:

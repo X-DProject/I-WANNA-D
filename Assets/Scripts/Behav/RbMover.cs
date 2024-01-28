@@ -19,7 +19,7 @@ namespace Game.Behav
         [SerializeField]
         private DirectionInputer _dirCtrller;
 
-        private void Update()
+        private void FixedUpdate()
         {
             if (_dirCtrller == null)
             {
