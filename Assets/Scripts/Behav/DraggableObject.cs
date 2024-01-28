@@ -12,6 +12,9 @@ namespace Game.Behav
         [SerializeField]
         private UnityEvent _onRelease;
 
+        [SerializeField]
+        private UnityEvent _onCancel;
+
         private bool    _isInDragging = false;
         private Vector3 _startPosition;
 
@@ -38,6 +41,7 @@ namespace Game.Behav
                     break;
                 case PointerEventData.InputButton.Right:
                     _isInDragging = false;
+                    _onCancel?.Invoke();
                     break;
                 default: 
                     break;
