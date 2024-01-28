@@ -15,5 +15,10 @@ namespace Game.Util
             GameInstance.Signal("game.over");
             Debug.Log("level: failed");
         }
+
+        public void End()
+        {
+            GameInstance.Signal("clearance.show");
+        }
     }
 }

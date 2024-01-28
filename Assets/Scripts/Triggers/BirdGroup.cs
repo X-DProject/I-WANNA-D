@@ -5,6 +5,7 @@ using System.Linq.Expressions;
 using Tool.Module.Message;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.Events;
 
 enum Stage
 {
@@ -21,6 +22,9 @@ public class BirdGroup : MonoBehaviour
 
     public GameObject star;
     public GameObject starGroup;
+
+    [SerializeField]
+    public UnityEvent _onTheEnd;
 
     private List<int> firstToneList = new List<int>
     {
@@ -93,7 +97,7 @@ public class BirdGroup : MonoBehaviour
             starGroup.SetActive(true);
             GameInstance.Signal("group_star");
             // Clearance
-            GameInstance.Signal("clearance.show");
+            _onTheEnd?.Invoke();
         }
     }
 

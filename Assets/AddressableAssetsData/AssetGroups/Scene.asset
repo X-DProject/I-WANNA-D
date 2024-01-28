@@ -16,37 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 5c3bea7399447d94fb6b422edffd3037
-  m_SerializeEntries:
-  - m_GUID: bc4f1208b641dad4a843cec31fb173f1
-    m_Address: scenes/0_start
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 2af67caa1dbbecf44b1879dc278642fa
-    m_Address: scenes/1_hungry
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6f09dc302c9188c488f7ff84f96d38a1
-    m_Address: scenes/BurgerShop_MontageWord.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 7be2c0fa33d8cb848991d08172c093b4
-    m_Address: scenes/7_ha
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b5190154d00ec984bb04def38efdaa82
-    m_Address: scenes/9_stargazing
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: fe8f61d243f14584987f1b2ee420a91b
-    m_Address: Assets/Scenes/3_CopAndThief.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: d5eb2a409bcece04baf20a1ce1b36992, type: 2}
   m_SchemaSet:
