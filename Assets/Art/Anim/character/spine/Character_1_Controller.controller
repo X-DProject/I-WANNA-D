@@ -237,7 +237,7 @@ AnimatorStateMachine:
     m_Position: {x: 370, y: 210, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6228358196887083966}
-    m_Position: {x: 360, y: -50, z: 0}
+    m_Position: {x: 370, y: -50, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6246832981635304413}
     m_Position: {x: 370, y: 20, z: 0}
@@ -350,25 +350,25 @@ AnimatorController:
     m_DefaultFloat: 0.2
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: idle_hold
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: stand_jump
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: is_move
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Body Layer

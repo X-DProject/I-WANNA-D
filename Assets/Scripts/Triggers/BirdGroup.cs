@@ -54,18 +54,30 @@ public class BirdGroup : MonoBehaviour
         var tone = (int)mag.Data;
         var index = ToneList.Count;
         ToneList.Add(tone);
+        printList();
+        Compare();
         switch (stage)
         {
         case Stage.Begin:
             if(ToneList[index] != firstToneList[index]) ToneList.Clear();
-            break;
+            return;
         case Stage.Half:
             if(ToneList[index] != secondToneList[index]) ToneList.Clear();
-            break;
+            return;
         }
-        Compare();
         if(ToneList.Count >= 7) ToneList.Clear();
     }
+
+    private void printList()
+    {
+        string print = "";
+        foreach(var num in ToneList)
+        {
+            print += num.ToString() + " ";
+        }
+        Debug.Log(print);
+    }
+
     private void Compare()
     {
         if (stage == Stage.Begin && ToneList.SequenceEqual(firstToneList))
@@ -73,11 +85,13 @@ public class BirdGroup : MonoBehaviour
             Debug.Log("stage change");
             star.SetActive(true);
             stage = Stage.Half;
+            GameInstance.Signal("one_star");
         }
 
         if (stage == Stage.Half && ToneList.SequenceEqual(secondToneList))
         {
             starGroup.SetActive(true);
+            GameInstance.Signal("group_star");
             // Clearance
             GameInstance.Signal("clearance.show");
         }
