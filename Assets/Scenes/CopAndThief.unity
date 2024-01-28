@@ -1710,10 +1710,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 502630091}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0254fa67b5e2dbe45a37fbd36e948e94, type: 3}
+  m_Script: {fileID: 11500000, guid: cb171bc8805c5664cba55b5988010e29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <InputDirection>k__BackingField: {x: 0, y: 0}
+  <Direction>k__BackingField: {x: 0, y: 0}
 --- !u!1 &507008661
 GameObject:
   m_ObjectHideFlags: 0
@@ -2544,7 +2544,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695355793}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.4362373, y: 2.3197234, z: 0}
+  m_LocalPosition: {x: -7.4362373, y: 0.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2565,7 +2565,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rb: {fileID: 695355797}
   _speed: 3
-  _controller: {fileID: 502630093}
+  _dirCtrller: {fileID: 502630093}
 --- !u!50 &695355797
 Rigidbody2D:
   serializedVersion: 4
@@ -2592,7 +2592,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!61 &695355798
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3198,6 +3198,9 @@ GameObject:
   m_Component:
   - component: {fileID: 826020519}
   - component: {fileID: 826020518}
+  - component: {fileID: 826020521}
+  - component: {fileID: 826020520}
+  - component: {fileID: 826020522}
   m_Layer: 0
   m_Name: police_car
   m_TagString: Untagged
@@ -3265,13 +3268,69 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826020517}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.4645357, y: -2.6606936, z: 0}
+  m_LocalPosition: {x: -7.4645357, y: -5.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1085958926}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &826020520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826020517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fc49bbbbd139b9449ce1ddd13a98303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rb: {fileID: 826020521}
+  _speed: 0.5
+  _dirCtrller: {fileID: 826020522}
+--- !u!50 &826020521
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826020517}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 3
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &826020522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826020517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cb1fd40276d0ab4b889791ae24d348b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Direction>k__BackingField: {x: 0, y: 0}
+  _chaseTarget: {fileID: 695355795}
 --- !u!1 &829986828
 GameObject:
   m_ObjectHideFlags: 0
