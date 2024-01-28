@@ -5,6 +5,7 @@ using Game.Behav;
 using Tool.Module.Message;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.Events;
 
 public class PlayerController : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class PlayerController : MonoBehaviour
     private AnimationPlayer anim;
     private bool isMove = false;
     private bool canControl = true;
+
+    [SerializeField]
+    private UnityEvent _onWin;
 
     // Start is called before the first frame update
     void Start()
@@ -122,8 +126,8 @@ public class PlayerController : MonoBehaviour
             Destroy(rb);
             // anim
             StartCoroutine(PlayAnim());
-            // next level
-            GameInstance.Signal("next_level");
+
+            _onWin?.Invoke();
         }
     }
 
