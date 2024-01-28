@@ -1840,7 +1840,79 @@ MonoBehaviour:
   _nextStep: {fileID: 273708748}
   _onFinished:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 888548300}
+        m_TargetAssemblyTypeName: Game.Behav.AnimationPlayer, Assembly-CSharp
+        m_MethodName: PlayDirectly
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: police_laugh
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 888548300}
+        m_TargetAssemblyTypeName: Game.Behav.AnimationPlayer, Assembly-CSharp
+        m_MethodName: PlayDirectly
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: road_backward_turnOver
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 695355800}
+        m_TargetAssemblyTypeName: Game.Behav.AnimationPlayer, Assembly-CSharp
+        m_MethodName: PlayDirectly
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: turnBack
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 826020525}
+        m_TargetAssemblyTypeName: Game.Behav.AnimationPlayer, Assembly-CSharp
+        m_MethodName: PlayDirectly
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: turnBack
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 826020520}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: turnBack
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 502630093}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: turnBack
+          m_BoolArgument: 0
+        m_CallState: 2
   _steps:
   - {fileID: 963542709}
   - {fileID: 319606638}
@@ -3170,10 +3242,12 @@ GameObject:
   m_Component:
   - component: {fileID: 695355795}
   - component: {fileID: 695355794}
+  - component: {fileID: 695355801}
   - component: {fileID: 695355797}
   - component: {fileID: 695355798}
   - component: {fileID: 695355796}
   - component: {fileID: 695355799}
+  - component: {fileID: 695355800}
   m_Layer: 0
   m_Name: player_car
   m_TagString: Untagged
@@ -3240,7 +3314,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695355793}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.4362373, y: 0.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3403,6 +3477,40 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _debug: 0
+--- !u!114 &695355800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695355793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0901f327b23f54a478fc540cf9dab905, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 695355801}
+--- !u!95 &695355801
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695355793}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c1a213b8110b47b409f61d72ab85c615, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &723960775
 GameObject:
   m_ObjectHideFlags: 0
@@ -3743,8 +3851,8 @@ MonoBehaviour:
   translator:
     autoReset: 1
     useCustomMixMode: 1
-    layerMixModes: 0100000000000000
-    layerBlendModes: 0100000003000000
+    layerMixModes: 010000000000000000000000
+    layerBlendModes: 010000000300000003000000
   updateTiming: 1
 --- !u!95 &742402781
 Animator:
@@ -4061,11 +4169,13 @@ GameObject:
   m_Component:
   - component: {fileID: 826020519}
   - component: {fileID: 826020518}
+  - component: {fileID: 826020526}
   - component: {fileID: 826020521}
   - component: {fileID: 826020524}
   - component: {fileID: 826020520}
   - component: {fileID: 826020522}
   - component: {fileID: 826020523}
+  - component: {fileID: 826020525}
   m_Layer: 0
   m_Name: police_car
   m_TagString: Untagged
@@ -4261,6 +4371,40 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0608678, y: 2.5161622}
   m_EdgeRadius: 0
+--- !u!114 &826020525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826020517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0901f327b23f54a478fc540cf9dab905, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 826020526}
+--- !u!95 &826020526
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826020517}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c1a213b8110b47b409f61d72ab85c615, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &829564124
 GameObject:
   m_ObjectHideFlags: 0
@@ -5658,37 +5802,6 @@ MonoBehaviour:
   zPosition: 1
   overrideAlpha: 1
   hierarchy: {fileID: 742402779}
---- !u!1 &1176782224
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1176782225}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1176782225
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1176782224}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3463758, y: -2.2666125, z: -0.008120989}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1256357902
 GameObject:
   m_ObjectHideFlags: 0
