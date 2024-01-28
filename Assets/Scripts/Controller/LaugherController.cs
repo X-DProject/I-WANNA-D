@@ -17,6 +17,8 @@ public class LaugherController : MonoBehaviour
     private Color showColor = new Color(1 ,1 ,1 ,1);
     private Color hideColor = new Color(1 ,1 ,1 ,0);
 
+    private bool _isWinned = false;
+
     private void Awake()
     {
         foreach(var ha in HaList)
@@ -29,7 +31,7 @@ public class LaugherController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
             if(activeCount == 8)
             {
@@ -48,7 +50,7 @@ public class LaugherController : MonoBehaviour
             GameInstance.Signal("ha.update", activeCount);
         }
 
-        if(activeCount == 0)
+        if(activeCount == 0 && !_isWinned)
         {
             GameInstance.Signal("ha.update", activeCount);
             anim.SetEmoji(0.5f, 0.5f);
@@ -73,14 +75,24 @@ public class LaugherController : MonoBehaviour
 
     private IEnumerator NextLevel()
     {
+        _isWinned = true;
         // anim
         foreach(var audio in audioList)
         {
             GameInstance.Signal("fx.play", audio);
         }
         
-        yield return new WaitForSeconds(1f);
+        var audiences = FindObjectsOfType<Audience>();
+        foreach (var au in audiences)
+        {
+            yield return new WaitForSeconds(0.1f);
+            var anim = au.GetComponent<AnimationPlayer>();
+            anim.ChangeAnimParamLerply("stand_jump float 1 0.5");
+        }
+
+        yield return new WaitForSeconds(4f);
         GameInstance.Signal("next_level");
+        
         yield break;
     }
 
