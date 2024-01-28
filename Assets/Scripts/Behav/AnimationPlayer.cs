@@ -142,5 +142,11 @@ namespace Game.Behav
             var args = "happy_angry float " + target.ToString() + " " + duration.ToString();
             ChangeAnimParamLerply(args);
         }
+
+        public void SetTrigger(string trigger)
+        {
+            var args = trigger.ToString() + " trigger";
+            ChangeAnimParamDirectly(args);
+        }
     }
 }
