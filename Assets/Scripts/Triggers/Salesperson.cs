@@ -6,6 +6,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using Game.Behav;
+using UnityEngine.Events;
 
 public class Salesperson : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class Salesperson : MonoBehaviour
     public GameObject dialogue;
     private bool isColl = false;
     private AnimationPlayer anim;
+
+    [SerializeField]
+    private UnityEvent _onStandingOutOfTime;
 
     private void Awake()
     {
@@ -55,12 +59,12 @@ public class Salesperson : MonoBehaviour
     private void OnCountdown(IMessage msg)
     {
         var time = (float)msg.Data;
-        if(time != countdownTime) return;
+        if (time != countdownTime) 
+            return;
 
-        if(isColl)
+        if (isColl)
         {
-            GameInstance.Signal("move.ban");
-            GameInstance.Signal("game.over");
+            _onStandingOutOfTime?.Invoke();
         }
     }
 
