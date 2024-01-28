@@ -17,18 +17,18 @@ namespace Game.Behav
         [Header("Ctrl")]
 
         [SerializeField]
-        private KeyboardInputer _controller;
+        private DirectionInputer _dirCtrller;
 
         private void Update()
         {
-            if (_controller == null)
+            if (_dirCtrller == null)
             {
                 Debug.LogWarning("RbMover: missing controller, movement will not work.");
                 return;
             }
 
-            var direction = _controller.InputDirection;
-
+            var direction = _dirCtrller.Direction;
+            
             _rb.AddForce(_speed * direction);
         }
     }

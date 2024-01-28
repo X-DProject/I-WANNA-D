@@ -5,16 +5,11 @@ using UnityEngine;
 
 namespace Game.Ctrl
 {
-    public sealed class KeyboardInputer : MonoBehaviour
-    {
-        [field: Header("debug")]
-
-        [field: SerializeField]
-        public Vector2 InputDirection { get; private set; }
-
+    public sealed class KeyboardDirectionInputer : DirectionInputer
+    {        
         private void Update()
         {
-            InputDirection = new Vector2 (
+            this.Direction = new Vector2 (
                     x: Input.GetAxis("Horizontal"),
                     y: Input.GetAxis("Vertical")
                 );
