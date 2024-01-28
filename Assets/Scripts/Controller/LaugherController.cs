@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
+using Game.Behav;
 
 public class LaugherController : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class LaugherController : MonoBehaviour
     private int haIdx = 0;
     private int activeCount = 0;
 
+    private AnimationPlayer anim;
     public float hideTime = 3f;
     private Color showColor = new Color(1 ,1 ,1 ,1);
     private Color hideColor = new Color(1 ,1 ,1 ,0);
@@ -20,6 +22,8 @@ public class LaugherController : MonoBehaviour
         {
             ha.gameObject.SetActive(false);
         }
+        anim = GetComponent<AnimationPlayer>();
+        anim.ChangeAnimParamDirectly("happy_angry float 0.5");
     }
 
     private void Update()
@@ -40,11 +44,19 @@ public class LaugherController : MonoBehaviour
                 StartCoroutine(ShowHa(haIdx));
                 haIdx ++;
             }
+            GameInstance.Signal("ha.update", activeCount);
+        }
+
+        if(activeCount == 0)
+        {
+            GameInstance.Signal("ha.update", activeCount);
+            anim.SetEmoji(0.5f, 0.5f);
         }
     }
 
     private IEnumerator ShowHa(int haIdx)
     {
+        anim.SetEmoji(1f);
         var haSprite = HaList[haIdx].transform.Find("Image").GetComponent<SpriteRenderer>();
         haSprite.color = showColor;
         HaList[haIdx].SetActive(true);

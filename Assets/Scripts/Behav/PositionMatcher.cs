@@ -19,7 +19,7 @@ namespace Game.Behav
 
         [SerializeField]
         private bool _debug;
-        
+
         private readonly List<PositionMatcher> _matchers = new(capacity: 99);
 
         private void Awake()
@@ -66,7 +66,7 @@ namespace Game.Behav
                 }
         }
 
-        public int  Id       => _id;
+        public int Id => _id;
         public bool HasMatch
         {
             get

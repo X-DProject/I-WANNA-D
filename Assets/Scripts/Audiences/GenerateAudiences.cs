@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class GenerateAudiences : MonoBehaviour
 {
@@ -36,12 +37,12 @@ public class GenerateAudiences : MonoBehaviour
                 if(i == playerColumn && j == playerRow)
                 {
                     playerTrans.position = position;
-                    playerTrans.GetComponent<SpriteRenderer>().sortingOrder = (rowCount - j)*2;
+                    playerTrans.Find("Spine").GetComponent<SortingGroup>().sortingOrder = (rowCount - j)*2;
                     playerTrans.Find("Chair").GetComponent<SpriteRenderer>().sortingOrder = (rowCount - j)*2 - 1;
                     continue;
                 }
                 GameObject instantiatedPrefab = Instantiate(audience, position, Quaternion.identity);
-                instantiatedPrefab.transform.Find("People").GetComponent<SpriteRenderer>().sortingOrder = (rowCount - j)*2;
+                instantiatedPrefab.transform.Find("Spine").GetComponent<SortingGroup>().sortingOrder = (rowCount - j)*2;
                 instantiatedPrefab.transform.Find("Chair").GetComponent<SpriteRenderer>().sortingOrder = (rowCount - j)*2 - 1;
                 instantiatedPrefab.transform.SetParent(this.transform);
             }

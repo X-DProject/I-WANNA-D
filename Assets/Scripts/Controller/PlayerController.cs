@@ -4,14 +4,16 @@ using System.Collections.Generic;
 using Game.Behav;
 using Tool.Module.Message;
 using UnityEngine;
+using DG.Tweening;
 
 public class PlayerController : MonoBehaviour
 {
     public float speed = 1f;
-    public Rigidbody2D rb;
+    public GameObject bound;
 
+    private Rigidbody2D rb;
     private Vector2 inputDirection;
-    private Animator anim;
+    private AnimationPlayer anim;
     private bool isMove = false;
     private bool canControl = true;
 
@@ -19,7 +21,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        anim = GetComponent<AnimationPlayer>();
+        anim.SetEmoji(0.5f);
     }
 
     private void OnEnable()
@@ -77,13 +80,19 @@ public class PlayerController : MonoBehaviour
     {
         if(inputDirection == new Vector2(0,0))
         {
-            anim.SetBool("isMove", false);
+            // anim.SetBool("isMove", false);
+            if(isMove == true)
+            {
+                anim.ChangeAnimParamDirectly("is_move bool false");
+            }
             isMove = false;
         }
         else
         {
             if(isMove == false)
-                anim.SetBool("isMove", true);
+            {    
+                anim.ChangeAnimParamDirectly("is_move bool true");
+            }
             isMove = true;
         }
 
@@ -100,5 +109,31 @@ public class PlayerController : MonoBehaviour
         }
 
         transform.localScale = new Vector3(faceDir, 1, 1);
+    }
+
+    private void OnTriggerEnter2D(Collider2D coll)
+    {
+        if(coll.CompareTag("Trigger"))
+        {
+            // ban input 
+            canControl = false;
+            inputDirection = new Vector2(0,0);
+            bound.SetActive(false);
+            Destroy(rb);
+            // anim
+            StartCoroutine(PlayAnim());
+            // next level
+            GameInstance.Signal("next_level");
+        }
+    }
+
+    private IEnumerator PlayAnim()
+    {
+        anim.ChangeAnimParamDirectly("is_move bool true");
+        transform.DOMove(new Vector3(-8f, -4.5f, 0), 1f);
+        transform.localScale = new Vector3(-1, 1, 1);
+        anim.ChangeAnimParamDirectly("is_move bool false");
+        anim.SetEmoji(1f, 1f);
+        yield return new WaitForSeconds(1f);
     }
 }

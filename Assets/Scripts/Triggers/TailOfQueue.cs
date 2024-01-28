@@ -37,24 +37,11 @@ public class TailOfQueue : MonoBehaviour
 
     private IEnumerator PlayQueueAnim()
     {
-        queue.transform.DOMoveX(-2f, moveDuration);
+        queue.transform.DOMoveX(-2.5f, moveDuration);
         yield return new WaitForSeconds(moveDuration);
         // trigger
         this.transform.DOMoveX(-7f, 0.1f);
         yield break;
-    }
-
-    private void OnTriggerEnter2D(Collider2D coll)
-    {
-        if(coll.CompareTag("Player"))
-        {
-            // ban input 
-            GameInstance.Signal("move.ban");
-            // anim
-            
-            // next level
-            GameInstance.Signal("next_level");
-        }
     }
 
 }
