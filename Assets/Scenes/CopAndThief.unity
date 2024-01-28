@@ -1126,7 +1126,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _delay: 2
+  _delay: 4
 --- !u!1 &281245018
 GameObject:
   m_ObjectHideFlags: 0
@@ -3635,7 +3635,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _delay: 2
+  _delay: 3
 --- !u!1 &888548298
 GameObject:
   m_ObjectHideFlags: 0
