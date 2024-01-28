@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -24,45 +25,46 @@ namespace Game.Behav
 
         private void Awake()
         {
-            if (!TryGetComponent(out Collider2D collider))
+            if (!TryGetComponent(out Collider2D _))
                 throw new MissingComponentException($"[PositionMatcher] {name} need collider2D to play a work.");
-
-            if (!collider.isTrigger)
-                Debug.LogWarning($"[PositionMatcher] on {name}, collider should be set as Trigger.");
 
             if (_id == default)
                 Debug.LogWarning($"[PositionMatcher] on {name}, we don't suggest use default value for id.");
         }
 
-        private void OnTriggerEnter2D(Collider2D collision)
+        private void OnTriggerEnter2D(Collider2D collision) => MatchOnEnter(collision.gameObject);
+        private void OnTriggerExit2D(Collider2D collision) => MatchOnExit(collision.gameObject);
+        private void OnCollisionEnter2D(Collision2D collision) => MatchOnEnter(collision.gameObject);
+        private void OnCollisionExit2D(Collision2D collision) => MatchOnExit(collision.gameObject);
+
+        private void MatchOnEnter(GameObject obj)
         {
             if (_debug)
-                Debug.Log($"[PositionMatcher] detected {collision.gameObject.name} enter {name}.");
+                Debug.Log($"[PositionMatcher] detected {obj.name} enter {name}.");
 
-            if (collision.TryGetComponent(out PositionMatcher matcher))
+            if (obj.TryGetComponent(out PositionMatcher matcher))
                 if (matcher.Id == this.Id && !_matchers.Contains(matcher))
                 {
                     _matchers.Add(matcher);
                     _onMatched?.Invoke();
 
                     if (_debug)
-                        Debug.Log($"[PositionMatcher] {collision.gameObject.name} already added to {name}.");
+                        Debug.Log($"[PositionMatcher] {obj.name} already added to {name}.");
                 }
         }
-
-        private void OnTriggerExit2D(Collider2D collision)
+        private void MatchOnExit(GameObject obj)
         {
             if (_debug)
-                Debug.Log($"[PositionMatcher] detected {collision.gameObject.name} exit of {name}.");
+                Debug.Log($"[PositionMatcher] detected {obj.name} exit of {name}.");
 
-            if (collision.TryGetComponent(out PositionMatcher matcher))
+            if (obj.TryGetComponent(out PositionMatcher matcher))
                 if (matcher.Id == this.Id && _matchers.Contains(matcher))
                 {
                     _matchers.Remove(matcher);
                     _onDismatched?.Invoke();
 
                     if (_debug)
-                        Debug.Log($"[PositionMatcher] {collision.gameObject.name} already delete from {name}.");
+                        Debug.Log($"[PositionMatcher] {obj.name} already delete from {name}.");
                 }
         }
 
