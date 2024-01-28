@@ -10,6 +10,18 @@ using UnityEngine.UI;
 public class NextLevel : MonoBehaviour
 {
     public GameObject sceneButton;
+    [SerializeField]
+    public List<Sprite> title;
+    [SerializeField]
+    public List<Sprite> level1;
+    [SerializeField]
+    public List<Sprite> level2;
+    [SerializeField]
+    public List<Sprite> level3;
+    [SerializeField]
+    public List<Sprite> level4;
+    [SerializeField]
+    public List<Sprite> level5;
 
     private void Awake()
     {
