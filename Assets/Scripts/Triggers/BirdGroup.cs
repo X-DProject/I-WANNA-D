@@ -54,7 +54,7 @@ public class BirdGroup : MonoBehaviour
         var tone = (int)mag.Data;
         var index = ToneList.Count;
         ToneList.Add(tone);
-        printList();
+        // printList();
         Compare();
         switch (stage)
         {
