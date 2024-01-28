@@ -3414,6 +3414,13 @@ MonoBehaviour:
   - {fileID: 837389317}
   - {fileID: 665806227}
   - {fileID: 306763986}
+  audioList:
+  - {fileID: 8300000, guid: 9b8fe1f8e4c58c846ac526f442c8f69e, type: 3}
+  - {fileID: 8300000, guid: 66b048bc49bde4d40a921f010b13c8f7, type: 3}
+  - {fileID: 8300000, guid: 3ead686d748c531489a31abbb59c9fe8, type: 3}
+  - {fileID: 8300000, guid: 02810b45a1430a54dbc6bfae9b469b8e, type: 3}
+  - {fileID: 8300000, guid: 0698b36f2b9f81b48862fbaed63d05b3, type: 3}
+  - {fileID: 8300000, guid: b111d1fed8b51554996d8ab84417f4e5, type: 3}
   hideTime: 3
 --- !u!114 &1397128511
 MonoBehaviour:

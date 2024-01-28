@@ -8,6 +8,7 @@ public class LaugherController : MonoBehaviour
 {
     [SerializeField]
     public List<GameObject> HaList;
+    public List<AudioClip> audioList;
     private int haIdx = 0;
     private int activeCount = 0;
 
@@ -56,6 +57,7 @@ public class LaugherController : MonoBehaviour
 
     private IEnumerator ShowHa(int haIdx)
     {
+        GameInstance.Signal("fx.play", audioList[Random.Range(0,audioList.Count)]);
         anim.SetEmoji(1f);
         var haSprite = HaList[haIdx].transform.Find("Image").GetComponent<SpriteRenderer>();
         haSprite.color = showColor;
@@ -72,6 +74,11 @@ public class LaugherController : MonoBehaviour
     private IEnumerator NextLevel()
     {
         // anim
+        foreach(var audio in audioList)
+        {
+            GameInstance.Signal("fx.play", audio);
+        }
+        
         yield return new WaitForSeconds(1f);
         GameInstance.Signal("next_level");
         yield break;
